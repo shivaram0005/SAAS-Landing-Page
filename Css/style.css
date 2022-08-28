@@ -60,6 +60,10 @@ body{
     position: relative;
     right: 40px;
 }
+
+.navbar .barss{
+    display: none;
+}
                                 /* hero section */
 .hero{
     display: flex;
@@ -216,4 +220,35 @@ body{
     margin-top: 4px;
 }
                            
-                           
+
+@media screen and (max-width:1300px) {
+    .navbar .grow-list{
+        display: none;
+    }
+    .navbar .button-small{
+        display: none;
+    }
+    .navbar .barss{
+        display: block;
+    }
+    .bg{
+        height: 1200px;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .hero .left .description{
+        color: #ffffff;
+        font-size: 40px;
+        width: 530px;
+        line-height: 80px;
+    }
+
+    .features-section{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+}
